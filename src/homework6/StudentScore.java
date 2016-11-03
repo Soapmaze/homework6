@@ -52,10 +52,10 @@ public class StudentScore {
 		System.out.printf("국어 총점은 %.0f점이고, 평균은 %.1f 입니다.\n", kor_sum, kor_sum / arr.length);
 		System.out.printf("영어 총점은 %.0f점이고, 평균은 %.1f 입니다.\n", eng_sum, eng_sum / arr.length);
 		System.out.printf("수학 총점은 %.0f점이고, 평균은 %.1f 입니다.\n", mat_sum, mat_sum / arr.length);
-		for(int k=0; k < arr.length; k++){
-			System.out.printf("%d번 학생의 총점은 %.0f, 평균은 %.1f 입니다.\n", k+1, personal_sum[k], personal_sum[k]/arr[0].length);
+		for (int k = 0; k < arr.length; k++) {
+			System.out.printf("%d번 학생의 총점은 %.0f, 평균은 %.1f 입니다.\n", k + 1, personal_sum[k],
+					personal_sum[k] / arr[0].length);
 		}
-		
 
 	}
 }

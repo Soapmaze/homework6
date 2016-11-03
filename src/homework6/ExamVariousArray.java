@@ -43,11 +43,11 @@ public class ExamVariousArray {
 			else if (Integer.parseInt(selected) == 3)
 				new StudentScore().input();
 
-			// else if (Integer.parseInt(selected) == 4)
-			// new DiamondStars().input();
+			else if (Integer.parseInt(selected) == 4)
+				new AptPersonCount().input();
 
-			// else if (Integer.parseInt(selected) == 4)
-			// new DiamondStars().input();
+			// else if (Integer.parseInt(selected) == 5)
+			// new OnlyNumber().input();
 
 			else if (Integer.parseInt(selected) == 6) {
 				System.out.println("프로그램을 종료합니다.");
