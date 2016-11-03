@@ -12,7 +12,7 @@ public class SecondMax {
 	void input() {
 		do {
 			while (true) {
-				System.out.printf("%d번째 수를 입력하시오 (종료는 q를 입력) :", i + 1);
+				System.out.printf("%d번째 수를 입력하시오 (종료는 q를 입력) : ", i + 1);
 				inputNumber = s.nextLine();
 				if (this.inputNumber.equalsIgnoreCase("q"))
 					return;

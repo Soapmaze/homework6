@@ -5,17 +5,15 @@ import java.util.Scanner;
 public class ExamVariousArray {
 
 	public static boolean isNumber(String str) {
-		if (str == null || str.equals(""))
-			return false;
+		boolean result = false;
 
-		for (int i = 0; i < str.length(); i++) {
-			char ch = str.charAt(i);
-
-			if (ch < '0' || ch > '9') {
-				return false;
-			}
+		try {
+			Double.parseDouble(str);
+			result = true;
+		} catch (Exception e) {
 		}
-		return true;
+
+		return result;
 	}
 
 	public static void main(String[] args) {
@@ -39,16 +37,16 @@ public class ExamVariousArray {
 			}
 			if (Integer.parseInt(selected) == 1)
 				new SecondMax().input();
-			//else if (Integer.parseInt(selected) == 2)
-				//new TriangleStars().input();
-			
-			//else if (Integer.parseInt(selected) == 3)
-				//new IsoscelesTriangleStars().input();
-			
-			//else if (Integer.parseInt(selected) == 4)
-				//new DiamondStars().input();
-			
-			else if (Integer.parseInt(selected) == 5) {
+			else if (Integer.parseInt(selected) == 2)
+				new AvgScore().input();
+
+			// else if (Integer.parseInt(selected) == 3)
+			// new IsoscelesTriangleStars().input();
+
+			// else if (Integer.parseInt(selected) == 4)
+			// new DiamondStars().input();
+
+			else if (Integer.parseInt(selected) == 6) {
 				System.out.println("프로그램을 종료합니다.");
 				s.close();
 				System.exit(0);
