@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SecondMax {
 
 	Scanner s = new Scanner(System.in);
-	int[] number = new int[10];
+	double[] number = new double[10];
 	String inputNumber;
 	int i = 0;
 
@@ -20,7 +20,7 @@ public class SecondMax {
 					System.out.println("숫자만 입력하셔야 합니다.");
 					continue;
 				} else {
-					number[i] = Integer.parseInt(inputNumber);
+					number[i] = Double.parseDouble(inputNumber);
 					i++;
 				}
 				if (i == 10) {
@@ -33,9 +33,9 @@ public class SecondMax {
 		} while (true);
 	}
 
-	void SecondMaxReturn(int arr[]) {
-		int max = arr[0];
-		int secondMax = max;
+	void SecondMaxReturn(double arr[]) {
+		double max = arr[0];
+		double secondMax = max;
 		int index = 0;
 
 		for (int j = 0; j < arr.length; j++) {
@@ -48,6 +48,6 @@ public class SecondMax {
 				index = j;
 			}
 		}
-		System.out.printf("두번째로 큰 수는 %d번째수 %d입니다.\n", index, secondMax);
+		System.out.printf("두번째로 큰 수는 %d번째수 %.1f입니다.\n", index, secondMax);
 	}
 }

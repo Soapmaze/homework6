@@ -40,8 +40,11 @@ public class ExamVariousArray {
 			else if (Integer.parseInt(selected) == 2)
 				new AvgScore().input();
 
-			// else if (Integer.parseInt(selected) == 3)
-			// new IsoscelesTriangleStars().input();
+			else if (Integer.parseInt(selected) == 3)
+				new StudentScore().input();
+
+			// else if (Integer.parseInt(selected) == 4)
+			// new DiamondStars().input();
 
 			// else if (Integer.parseInt(selected) == 4)
 			// new DiamondStars().input();
